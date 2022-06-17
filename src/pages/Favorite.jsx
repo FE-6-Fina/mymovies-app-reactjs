@@ -1,9 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Favorite extends Component {
-  render() {
-    return <div>Favorite page</div>;
-  }
+function Favorite() {
+  return <div>Favorite</div>;
 }
 
 export default Favorite;

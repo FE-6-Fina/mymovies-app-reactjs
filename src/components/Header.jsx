@@ -1,18 +1,24 @@
-import React, { Component } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
+import logo from "../assets/images/logoo.png";
 
-class Header extends Component {
-  render() {
-    return (
-      <div className="flex justify-center items-center bg-slate-100 shadow-md  mx-auto text-slate-700 text-lg font-inter px-6 py-1 mb-10">
-        <p className="w-full flex text-red-800 text-2xl font-bold font-mono">Watch Now.</p>
-        <ul className="flex">
-          <li className="p-4">Home</li>
-          <li className="p-4">Detail</li>
-          <li className="p-4">Favorite</li>
-        </ul>
-      </div>
-    );
-  }
-}
+const Header = () => {
+  return (
+    <div className="sticky flex justify-between items-center  shadow-md mx-5 text-slate-900 text-lg font-semibold font-inter">
+      <img className="flex " src={logo} alt="logo" />
+      <ul className="pl-16">
+        <Link to="/" className="px-6">
+          Home
+        </Link>
+        <Link to="/detail" className="px-6">
+          Detail
+        </Link>
+        <Link to="/favorite" className="px-6">
+          Favorite
+        </Link>
+      </ul>
+    </div>
+  );
+};
 
 export default Header;

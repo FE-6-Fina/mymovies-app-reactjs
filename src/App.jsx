@@ -12,20 +12,14 @@ export default class App extends Component {
     dataMovie: [],
   };
 
-  // handleClick(item) {
-  //   const temp = this.state.dataMovie.slice();
-  //   temp.push(item);
-  //   this.setState({ dataMovie: temp });
-  // }
-
   render() {
     return (
       <div>
         <>
           <Header />
           <Home />
-          {/* <Detail />
-          <Favorite /> */}
+          <Detail />
+          <Favorite />
         </>
       </div>
     );
