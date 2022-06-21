@@ -5,7 +5,7 @@ import logo from "../assets/images/logoo.png";
 const Header = () => {
   return (
     <div className="sticky flex justify-between items-center  shadow-md mx-5 text-slate-900 text-lg font-semibold font-inter">
-      <img className="flex " src={logo} alt="logo" />
+      <img className="flex " to="/" src={logo} alt="logo" />
       <ul className="pl-16">
         <Link to="/" className="px-6">
           Home
